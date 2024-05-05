@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "FranklinGothic";
+    src: url("/assets/font/FranklinGothic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "FranklinGothicItalic";
+    src: url("/assets/font/FranklinGothicItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "condensed";
+    src: url("/assets/font/condensed.ttf") format("truetype");
+}
+

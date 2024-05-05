@@ -1,0 +1,226 @@
+body {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: FranklinGothic;
+    background-color: #ffffff;
+}
+
+.header {
+    background-color: #232d4b; /* Adjust the color to match the background of the header */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 4px; /* Optional: if you want rounded corners */
+
+    /* Added more padding around the logo */
+    padding-right: 1rem; /* Increase as needed to adjust the space on the right side */
+}
+
+.footer {
+    background-color: #232d4b; /* Adjust the color to match the background of the header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    margin: 0 !important; 
+
+
+}
+
+.header-title {
+    text-align: left;
+    margin-right: 2rem;
+}
+
+.title {
+    font-size: 24px; /* Adjust the size as needed */
+    margin-bottom: 0.25rem; /* Add some space below the title */
+}
+
+.subtitle {
+    font-size: 20px; /* Adjust the size as needed */
+    color: white !important;
+    padding: 0px !important;
+    margin-bottom: 0.25rem; /* Add some space below the subtitle */
+}
+
+.team {
+    font-size: 18px; /* Adjust the size as needed */
+    padding: 0px;
+    margin-bottom: 1rem; /* Add some space below the team */
+    font-family: FranklinGothic !important;
+
+}
+
+
+/* Logo styling, adjust the margin here to increase spacing */
+.footer-logo1 .footer-logo2 {
+    margin-left: 3rem; 
+    margin-right: 3rem; 
+    align-items: center;
+
+
+}
+
+.header-logo {
+    margin-left: 2rem; /* Increase this value to add more space between text and logo */
+    display: flex;
+}
+
+.image1 .image2 {
+  display: block;
+  margin-left: auto;
+  height: 600px;
+  margin-right: auto;
+}
+.header-logo .logo {
+    height: 50px; /* Adjust according to your design */
+    /* Additional styling if needed */
+}
+
+.footer-logo1 .logo {
+    height: 60px; /* Adjust according to your design */
+    margin-bottom: 0 !important; /* Add some space below the team */
+
+    /* Additional styling if needed */
+}
+.footer-logo2 .logo {
+    height: 60px; /* Adjust according to your design */
+    margin-bottom: 0 !important; /* Add some space below the team */
+    /* Additional styling if needed */
+}
+/* CSS for tab layout */
+.row.all-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -30px; 
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    background-color: #ffffff; /* or any color you prefer */
+    padding: 1rem 0 !important; /* This padding adds space above and below the tabs */
+    margin: 1rem 0 !important; /* Adjusted to only add margin to top and bottom */
+}
+
+.tab, .tab-first {
+    text-decoration: none;
+    color: white; /* Tab text color */
+    font-size: 20px; /* Font size unified */
+    padding: 1rem 1.5rem !important; /* Adjust right and left padding to match design */
+    margin: auto !important; /* Remove margin around tabs to prevent extra space between them */
+    background-color: #232d4b; /* Assuming this is the color for your tabs */
+    border: none; /* Remove borders if any */
+    border-radius: 4px; /* Optional: if you want rounded corners */
+    display: inline-block !important; /* Helps with spacing and alignment */
+}
+
+.tab:hover, .tab-first:hover {
+    background-color: #f0f0f0; /* Tab hover color */
+}
+
+/* Additional focus on the first tab to differentiate */
+.tab-first {
+    font-weight: bold; /* Make the first tab bolder if needed */
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    flex:1;
+    padding: 1rem;
+    align-items: center;
+
+}
+
+#page1 .row {
+    display: flex;
+    flex-wrap: wrap;
+    /*margin: 0 -30px;  /* Adjust as necessary */
+}
+
+#page1 .column {
+    padding: 0 15px;  /* Adjust as necessary */
+    flex: 33.33%;     /* Adjust as necessary to match the poster layout */
+    width: 100%; /* Adjust as necessary */
+    box-sizing: border-box;
+    /*margin-bottom: 1rem;*/
+}
+
+
+/* Style for H2 elements to match poster headers */
+#page1 h2 {
+    background-color: #232d4b; /* Light gray background */
+    color: white;
+    padding: 10px;
+    margin-top: 0;
+}
+
+/* Paragraph styling */
+#page1 p {
+    text-align: justify;
+    font-family: Calibri;
+
+}
+/* Style for the ordered list */
+#page1 ol {
+    padding-left: 20px; /* Indent the list */
+    counter-reset: item; /* Reset the list counter */
+}
+
+/* Style for the list items */
+#page1 li {
+    margin-bottom: 10px; /* Space between list items */
+    counter-increment: item; /* Increment the list item counter */
+    text-align: justify;
+    font-family: Calibri;
+}
+
+#graphs-page h2 {
+    color: black;
+    margin-top: 0;
+}
+
+.graph-container {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+#graph1, #graph2, #aideploy, #graph4, #graph5{
+    font-family: FranklinGothic;
+    height: 400px;
+    width: 100%;
+}
+
+#graph1-desc, #graph2-desc, #graph3-desc, #graph4-desc, #graph5-desc {
+    text-align: center;
+    font-family: Calibri;
+    margin-top: 10px;
+}
+
+#demo-explanation {
+  font-family: Calibri !important;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 0px;
+  letter-spacing: 0;
+  padding: 0px 15px;
+  
+}
+
+#learn-more-button {
+    text-decoration: none;
+    font-family: FranklinGothic !important;
+    color: white; /* Tab text color */
+    font-size: 15px; /* Font size unified */
+    padding: 1rem 1.5rem !important; /* Adjust right and left padding to match design */
+    margin: auto !important; /* Remove margin around tabs to prevent extra space between them */
+    background-color: #232d4b; /* Assuming this is the color for your tabs */
+    border: none; /* Remove borders if any */
+    border-radius: 4px; /* Optional: if you want rounded corners */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}

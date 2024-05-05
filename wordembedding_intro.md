@@ -1,0 +1,1 @@
+The scatter plot below is the result of running the t-SNE algorithm on the incident descriptions, resulting in a visualization of the words. To learn more about how the t-SNE Explorer works, click on "Learn More" below.
