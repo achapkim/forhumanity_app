@@ -5,7 +5,6 @@ from dash import dcc, html
 from PIL import Image
 from io import BytesIO
 from dash.dependencies import Input, Output
-from .generate_embeddings import generate_embedding
 
 from utils import Header 
 
@@ -345,7 +344,8 @@ def word_callbacks(app):
         selected_word,
         wordemb_display_mode,
     ):
-            embedding_df = generate_embedding(iterations, perplexity, learning_rate)
+            path = f"iterations_{iterations}_perplexity_{perplexity}_learning_rate_{learning_rate}.csv"
+            embedding_df = pd.read_csv(DATA_PATH.joinpath(path))
 
             # Plot layout
             axes = dict(title="", showgrid=True, zeroline=False, showticklabels=False)
